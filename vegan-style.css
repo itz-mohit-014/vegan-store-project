@@ -1,0 +1,610 @@
+/* 
+
+Author : Mohit Jangid
+Title : Vegan Store Project clone
+Purpose : I made this project using whatever I learn and I applied everything here to test my skills. 
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+}
+
+/* Header Designing  */
+
+#navigation{
+    height: 9vh;
+    min-height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+
+}
+
+#logo img{
+    margin: 10px 1.5rem;
+    height: 40px;
+    width: 40px;
+}
+
+#navigation-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.menu-items{
+    padding-right: 24px;
+    position: relative;
+}
+
+.menu-items:first-of-type:hover .dropdown-menu{
+    display: flex;
+}
+
+.nav-link-menus{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 8px;
+}
+#buy-now-btn{
+    height: 35px;
+    background-color: rgb(159, 208, 85);
+    border:2px solid transparent;
+    border-radius:6px ;
+    cursor: pointer;
+    color: white;
+    font-size: 0.60em;
+    text-transform: uppercase;
+    padding: 0px 2.2rem;
+}
+#buy-now-btn:hover{
+    color:rgb(126, 205, 7) ;
+    background-color: white;
+    border: 2px solid rgb(126, 205, 7);
+}
+
+/* dropdown menu appering */
+
+.dropdown-menu{
+    display: none;
+    flex-direction: column;
+    border-top: 3px solid rgb(126, 205, 7);
+    box-shadow: 0px 2px 8px gray;
+    background-color:#fff;
+    padding: 10px;
+    margin-top: 8px;
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    right: 0px;
+}
+
+.dropdown-menu-item{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 6px ;
+    padding-bottom:5px ;
+    border-bottom: 1px solid gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-menu-item:last-of-type{
+    border-bottom: none;
+}
+
+                                /* landing page styling */
+
+.main-title{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/landing-background.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title > h1 {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    width: 60vw;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-bottom: 1.4rem;
+    
+}
+.main-title > p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(72, 71, 71);
+    width: 70vw;
+
+}
+
+                        /* steps sections styling */
+
+#steps-section{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+}
+
+.steps-items{
+    height: auto;
+    width: calc(100vw / 4 - 10px);
+    margin: 2px;
+    min-width: 250px;
+    text-align: center;
+    padding: 100px 20px;     
+    box-sizing: border-box;
+    color: #dbdbdb;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.steps-items:hover i{
+    scale: 1.2;
+    box-shadow: 0px 2px 4px gray;
+    border-radius: 20%;
+}
+
+.steps-items > i{
+    padding: 0.65rem;
+    font-size:6em;
+    transition: ease-in-out 0.2s;
+
+}
+.steps-items > h3{
+    font-size: 2em;
+    padding: 20px 0px;
+}
+.steps-items > p{
+    font-size: 16px;
+    word-spacing: 5px;
+    padding: 10px 0px;
+    line-height: 1.4rem;
+    width: 100%;
+
+}
+
+#step1{
+    background-color:rgba(3, 176, 176,0.6);
+}
+
+#step2{
+    background-color:rgba(18, 147, 48, 0.6);
+}
+
+#step3{
+    background-color:rgba(177, 119, 19,0.6);
+}
+
+#step4{
+    background-color:rgba(164, 43, 229, 0.6);
+}
+
+
+                        /* Product Quality section and detalis */
+
+.product-quality{
+    height: auto;
+    margin: 4rem 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.product-quality-section >span{ 
+    color: green;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.product-quality-section >h3{
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.product-quality-section >p{
+    color: #888787;
+    letter-spacing: 2px;
+    padding: 1rem 5px;
+}
+.product-quality-details{
+    width: 95vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.product-quality-details-items{
+    width: 250px;
+    min-height: 340px;
+    text-align: center;
+    padding: 8px;
+}
+.product-quality-details-items:hover .icons{
+    scale: 1.1 ;
+}
+
+.product-quality-details-items>.icons{
+    font-size: 4rem;
+    background-color: rgb(215, 162, 93);
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    margin: 10px;
+    transition: ease-in-out 0.3s;
+}
+.product-quality-details-items>h4{
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.product-quality-details-items>p{
+    color: #888787;
+    letter-spacing: 1px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 24px;
+
+}
+
+/* vegan store shop profiles section styling*/
+
+.profile-section{
+    margin: 0px;
+}
+#shop-details-para{
+    font-family:sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    padding: 2vh 5px;
+    width: 60vw;
+}
+
+#store-persons-profiles-sections{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profile-cards{
+    width: 25vw;
+    min-width: 300px;
+    height: 450px;
+    background-color:rgba(219, 219, 219, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 5px 10px;
+    transition: all 0.3ms;
+
+}
+.profile-cards:hover{
+    box-shadow: 2px 4px 10px #888787;
+    scale: 1.01;
+}
+
+.profile-pic{
+    width: 80px;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.profile-cards>p{
+    font-size: 16px;
+    height: 35%;
+    color: gray;
+    font-family: sans-serif;
+    line-height: 1.4;
+    padding: 0.6rem;
+    margin: 1em ;
+}
+.profile-cards>h4{
+    scale: 0.8;
+    letter-spacing: 2px;
+    padding: 3px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.profile-cards>:last-child{
+    color: #888787;
+    font-style: italic;
+    font-size: small;
+}
+
+/* Follow section styling */
+
+#follow-secion{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: stretch;
+    /* align-items: stretch; */
+    align-content: stretch;
+    flex-wrap: wrap;
+    margin: 12vh 0px;
+
+}
+
+#left-section>img{
+    width: 70vw;
+}
+#right-section{
+    width: 29vw;
+    background-image: url('/images/strawberry-white-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+}
+#right-section>h3{
+    font-family: cursive;
+    font-size: 60px;
+    color: palevioletred;
+    padding-top: 50px;
+    width: 65%;
+}
+#right-section>p{
+    font-size: 18px;
+    line-height: 2;
+    font-family: sans-serif;
+    width: 65%;
+    margin: 20px 0px;
+}
+#right-section > input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 20px;
+    width: 65%;
+    border-radius: 5px;
+    border: border-box;
+    box-sizing: border-box;
+}
+
+#right-section #gmail-input-box{
+    box-shadow: 0px 4px 10px gray;
+}
+#right-section #gmail-input-box:focus{
+    border:2px solid palevioletred;
+}
+
+#right-section #subscribe-btn{
+    background-color: palevioletred;
+    color: white;
+    margin-top: 1rem ;
+}
+
+#right-section #subscribe-btn:hover{
+    background-color: white;
+    border:2px solid palevioletred;
+    color: palevioletred;
+}
+
+/* Customer section styling */
+
+#customer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    margin: 80px 0px;
+
+}
+.customer-review-area{
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    padding-bottom:10px ;
+    text-align: center;
+
+}
+
+.customer-review-area :first-of-type{
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+.customer-review-area :last-of-type{
+    color: rgb(41, 211, 211);
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+/* video section styling */
+
+#food-video-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+
+}
+#video-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#video-title>h3{
+    font-size: 3em; 
+    color: #888787;
+    padding-bottom: 2vw ;
+    font-family: sans-serif;
+    font-weight: lighter;
+
+}
+#line-break{
+    display: block;
+    border-bottom: 2px solid #dca418;
+    width: 60%;
+
+}
+#food-video-section>iframe{
+    width:80vw;
+    height: 40vw;
+    margin: 50px;
+
+}
+
+/* Contact Us Informaint section styling */
+
+#contact-us{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.address-info{
+    width: 40vw;
+    min-width: 300px;
+    padding: 20px 0px;
+}
+.address-info>h3{
+    color: darkgreen;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: lighter;
+
+
+}
+.add-info-detials > h3{
+    font-size: 44px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding: 0.2em 0px 0.5em;
+
+}
+
+.add-info-detials > h4{
+    font-size: 38px;
+    padding: 0.5em 0px 0.2em;
+}
+
+.add-info-detials > p{
+    font-size: 20px;
+    max-width: 400px;
+    color: #888787;
+}
+
+#address-seperator-line{
+    width: 300px;
+    margin-top: 20px;
+    border-bottom: 4px solid #888;
+    border-radius: 50%;
+}
+
+/* form in contact us section styling*/
+
+
+
+#user-filling-form{
+    margin-top: 15px;
+}
+#user-filling-form >input{
+    color: #888787;
+    padding: 20px;
+    width: 30vw;
+    min-width: 250px;
+    outline: none;
+    border: 1px solid #d3d1d1;
+    font-size: 1em;
+    margin: 0.5em 0px;
+}
+#user-filling-form >textarea{
+    color: #888787;
+    padding: 20px;
+    width: 30vw;
+    min-width: 250px;
+    outline: none;
+    border: 1px solid #d3d1d1;
+    font-size: 1.2em;
+    margin: 0.5em 0px;
+}
+#user-filling-form >#submit-btn{
+    background-color: rgb(126, 205, 7);
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+    width:220px;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+#user-filling-form >#submit-btn:hover{
+    background-color: #fff;
+    border-color:rgb(126, 205, 7) ;
+    color:rgb(126, 205, 7) ;
+
+}
+
+
+/* Footer Styling start from here */
+#footer{
+    background-color: rgb(33, 33, 33);
+    height: 8vh;
+}
+#foot-content{
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 2.5vh;
+    letter-spacing: 2px;
+
+}
+
+
+/* 
+        ************
+RESPONSIVE DESIGNING FROM HERE 
+        ************
+
+*/
+
+
+
+
+

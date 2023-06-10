@@ -1,0 +1,207 @@
+/* 
+        ************
+RESPONSIVE DESIGNING HERE 
+        ************
+
+*/
+
+/* For Mobile Devices */
+@media screen and (max-width: 450px){
+
+       /* Header menu item lising */
+    
+    #navigation-menu{
+        visibility: hidden;
+        margin-right:0px;
+    }
+    .menu-items{
+        padding-right: 0px;
+    }
+    .nav-link-menus{
+        font-size: 12px;
+    }
+    #buy-now-btn{
+        visibility: visible;
+        scale: 0.8;
+    }
+
+    /* Landing Page */
+
+    .main-title > h1{
+        font-size: 22px;
+    }
+
+     /* steps sections styling */
+
+ 
+    .steps-items{
+        width: 100vw;
+        max-width: 380px;
+    }
+
+ /* Product Quality section and detalis */
+
+    .product-quality-section{
+        width: 100vw;
+        max-width: 360px;
+    
+    }
+    .product-quality-details-items{
+        background-color: rgb(240, 238, 238);
+        width: 100vw;
+        max-width: 360px;
+        margin-bottom:20px ;
+    }
+
+
+/* vegan store shop profiles section styling*/
+
+    #shop-details-para{
+        width: auto;
+    }
+
+
+    /* Follow section styling */
+    #left-section>img{
+        width: 100vw;
+        height: auto;
+    }
+    #right-section{
+        width: 100vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #right-section>h3{
+        font-size: 40px;
+    }
+    #right-section>p{
+        font-size: 12px;
+        /* padding: 10px ; */
+    }
+    #right-section > input{
+        font-size: 12px;
+        width: 60%;
+    }
+
+    
+    /* video section styling */
+
+    #food-video-section{
+        height: 50vh;
+    }   
+
+
+/* footer font sizing */
+
+    #foot-content{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+/* For bigger screen to mobile Devices */
+@media screen  and (min-width: 450px) and (max-width: 900px){
+
+    /* Header menu item lising */
+    
+    #navigation-menu{
+        scale: 0.8;
+    }
+
+    /* Landing Page */
+
+    .main-title > h1{
+        font-size: 28px;
+    }
+    .main-title > p{
+        font-size: 14px;
+    }
+
+    /* steps sections styling */
+
+      .steps-items{
+        min-width: 300px;
+    }
+    
+
+     /* Product Quality section and detalis */
+
+     .product-quality-section{
+        width: 50vw;
+    
+    }
+ 
+    /* Follow section styling */
+    
+    #left-section>img{
+        width: calc(100vw - 310px);
+    }
+
+    #right-section{
+        width:300px ;
+    }
+    #right-section>h3{
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    #right-section>p{
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+    #right-section > input{
+        font-size: 12px;
+        width: 60%;
+    }
+
+
+    /* Customer section styling */
+
+    .customer-review-area{
+        width: 300px;
+      
+    }
+    /* Contact Us Informaint section styling */
+
+    .address-info{
+        width: 350px;
+    }
+
+}
+
+ 
+
+
+@media screen and  (min-width: 900px) and (max-width:1200px){
+    /* Product Quality section and detalis */
+    .product-quality-details-items{
+        width: 220px;
+
+    }   
+
+      /* Follow section styling */
+
+    #right-section>h3{
+        font-size: 50px;
+        padding-top: 10px;
+    }
+    #right-section>p{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    #right-section > input{
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .customer-review-area{
+        margin: 0px;
+    }
+
+ 
+   
+
+}
