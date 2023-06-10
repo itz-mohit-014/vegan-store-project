@@ -1,0 +1,31 @@
+[33mcommit e0ef0f235197d7bfcd3d427d4955992535a9d5c2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: ad58bc6 632d598
+Author: Mohit <mohitjangid38437@gmail.com>
+Date:   Sat Jun 10 17:18:54 2023 +0530
+
+    git commit
+    :wq
+
+[33mcommit ad58bc6d3f68e53eac196d485d194701222645a7[m[33m ([m[1;31morigin/vegan-store[m[33m)[m
+Author: Mohit <mohitjangid38437@gmail.com>
+Date:   Sat Jun 10 16:38:57 2023 +0530
+
+    Remove Image absolute path
+
+[33mcommit 8ae869244c710678529bc5c4857ed3999a333c86[m
+Author: Mohit <mohitjangid38437@gmail.com>
+Date:   Sat Jun 10 16:30:40 2023 +0530
+
+    change images path  to view directly
+
+[33mcommit 632d5981e0a0ffbe0689908094bb213ad4cece2f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Mohit Jangid <95575123+itz-mohit-014@users.noreply.github.com>
+Date:   Sat Jun 10 16:04:18 2023 +0530
+
+    Create README.md
+
+[33mcommit f16a9aa1ced7f8f2ca4d9ccab4dfc4f163d91475[m
+Author: Mohit <mohitjangid38437@gmail.com>
+Date:   Sat Jun 10 15:53:27 2023 +0530
+
+    Adding All Files on New Repository
