@@ -114,7 +114,7 @@ Purpose : I made this project using whatever I learn and I applied everything he
 .main-title{
     width: 100vw;
     height: 100vh;
-    background-image: url('landing-background.png');
+    background-image: url('images/landing-background.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -366,7 +366,7 @@ Purpose : I made this project using whatever I learn and I applied everything he
 }
 #right-section{
     width: 29vw;
-    background-image: url('strawberry-white-bg-img.png');
+    background-image: url('images/strawberry-white-bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
